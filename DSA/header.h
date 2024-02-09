@@ -1,3 +1,3 @@
 #pragma once
 #include<iostream>
-#define AddSum
+#define BuySellStock

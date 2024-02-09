@@ -2,6 +2,8 @@
 #include <map>
 using namespace std;
 
+#ifdef AddSum
+
 int* solve(int* arr, int size, int target) {
     map<int, int> temp;
     for (int i = 0; i < size; i++) {
@@ -23,3 +25,5 @@ int main() {
     delete[] result;  // Free the memory allocated for result
     return 0;
 }
+
+#endif // AddSum

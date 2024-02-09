@@ -23,5 +23,8 @@
     <ClCompile Include="AddSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BuySellStock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
