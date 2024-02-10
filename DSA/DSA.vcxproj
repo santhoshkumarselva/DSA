@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="AddSum.cpp" />
     <ClCompile Include="BuySellStock.cpp" />
+    <ClCompile Include="ContainsDuplicate.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
