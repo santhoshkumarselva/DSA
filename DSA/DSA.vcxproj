@@ -130,9 +130,13 @@
     <ClInclude Include="header.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AddSum.cpp" />
     <ClCompile Include="BuySellStock.cpp" />
+    <ClCompile Include="TwoSum.cpp" />
+    <ClCompile Include="ClimbingStairs.cpp" />
+    <ClCompile Include="Constructor.cpp" />
     <ClCompile Include="ContainsDuplicate.cpp" />
+    <ClCompile Include="FunctionPointer.cpp" />
+    <ClCompile Include="MultiThreading.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define ContainsDuplicate
+#ifdef ContainsDuplicate
 
 bool solve(int* arr, int n) {
 	set<int> s;
@@ -31,3 +31,5 @@ int main() {
 	}
 	return 0;
 }
+
+#endif

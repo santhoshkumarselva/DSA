@@ -1,34 +1,24 @@
 #include"header.h"
-#include<map>
-
 using namespace std;
 
-#ifdef BuySellStock
+#ifndef BuySellStockPractice
 
 void solve(int* arr, int n) {
-	int minValue = arr[0], maxProfit = 0;
+	int min_price = arr[0];
+	int max_profit = INT_MIN;
+	int current_profit;
 	for (int i = 1; i < n; i++) {
-		if (arr[i] - minValue > maxProfit) {
-			maxProfit = arr[i] - minValue;
-		}
-		else if (arr[i] < minValue) {
-			minValue = arr[i];
-		}
+		current_profit = arr[i] - min_price;
+		min_price = (min_price < arr[i]) ? min_price : arr[i];
+		max_profit = (max_profit > current_profit) ? max_profit : current_profit;
 	}
-	cout << "Solution is " << maxProfit;
+	cout << "The max profit is " << max_profit;
 }
 
 int main() {
-	int* arr;
-	int n;
-	cout << "Enter n ";
-	cin >> n;
-	arr = new int[n];
-	cout << "Enter n numbers";
-	for (int i = 0; i < n; i++) {
-		cin >> arr[i];
-	}
+	int arr[]{ 100, 180, 260, 310, 40, 535, 695 };
+	int n = sizeof(arr) / sizeof(arr[0]);
 	solve(arr, n);
 }
 
-#endif // BuySellStock
+#endif // !BuySellStockPractice

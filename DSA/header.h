@@ -1,3 +1,5 @@
 #pragma once
 #include<iostream>
-#define ContainsDuplicate
+#include<thread>
+#include<map>
+#define BusySellStockPractice
